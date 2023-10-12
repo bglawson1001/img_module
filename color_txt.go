@@ -38,7 +38,7 @@ func Text(txt, outputDestination string) error {
 	dc.DrawStringAnchored("Hello, world!", W/2, H/2, 0.5, 0.5)
 	dc.Stroke()
 
-	dc.SavePNG("hello.jpg")
+	dc.SavePNG(outputDestination)
 
 	fmt.Println("Image with added text saved.")
 
