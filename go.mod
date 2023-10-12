@@ -1,4 +1,4 @@
-module "github.com/bglawson1001/img_module"
+module github.com/bglawson1001/img_module
 
 go 1.21.0
 
