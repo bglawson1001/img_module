@@ -3,7 +3,7 @@ package img_module
 import (
 	"fmt"
 	_ "image/jpeg"
-	"io/ioutil"
+
 	"os"
 
 	"github.com/fogleman/gg"
@@ -15,7 +15,7 @@ func Text(txt, outputDestination string) error {
 	const H = 300
 
 	// Create a temporary file and write the byte slice to it
-	tempFile, err := ioutil.TempFile("", "font-*.ttf")
+	tempFile, err := os.CreateTemp("", "font-*.ttf")
 	if err != nil {
 		panic(err)
 	}
