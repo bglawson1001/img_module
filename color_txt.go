@@ -35,7 +35,7 @@ func Text(txt, outputDestination string) error {
 	dc.Clear()
 
 	dc.SetRGB(.5, 0, 0)
-	dc.DrawStringAnchored("Hello, world!", W/2, H/2, 0.5, 0.5)
+	dc.DrawStringAnchored(txt, W/2, H/2, 0.5, 0.5)
 	dc.Stroke()
 
 	dc.SavePNG(outputDestination)
