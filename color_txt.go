@@ -38,7 +38,7 @@ func Text(txt, outputDestination string) error {
 	dc.DrawStringAnchored("Color_Wheel", W/2, H/2, 0.5, 0.5)
 	dc.Stroke()
 
-	dc.SavePNG(outputDestination)
+	dc.SavePNG(Color_Wheel.jpg)
 
 	fmt.Println("Image with added text saved.")
 
