@@ -33,3 +33,4 @@ func Colors(imageOrigin string) error {
 
 	return nil
 }
+
