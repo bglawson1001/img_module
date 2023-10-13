@@ -3,7 +3,7 @@ package img_module
 import (
 	"fmt"
 	"image"
-	_ "image/jpeg"
+	_ "image/jpeg" // import this package to decode jpegs
 	_ "image/png" // import this package to decode PNGs
 	"os"
 )
