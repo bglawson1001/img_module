@@ -6,7 +6,7 @@ import (
 	"image/color"
 	_ "image/jpeg"
 	"image/png"
-	"os" 
+	"os"
 )
 
 func Gray_scale(inputDestination, outputDestination string) error {
@@ -17,7 +17,7 @@ func Gray_scale(inputDestination, outputDestination string) error {
 	}
 	defer reader.Close()
 
-	// Decode the image 
+	// Decode the image
 	img, _, err := image.Decode(reader)
 	if err != nil {
 		return fmt.Errorf("error decoding the image: %v", err)
@@ -56,3 +56,4 @@ func Gray_scale(inputDestination, outputDestination string) error {
 	fmt.Println("Grayscale image saved.")
 	return nil
 }
+
