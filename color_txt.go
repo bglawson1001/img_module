@@ -35,10 +35,10 @@ func Text(txt, outputDestination string) error {
 	dc.Clear()
 
 	dc.SetRGB(.5, 0, 0)
-	dc.DrawStringAnchored("Color_Wheel", W/2, H/2, 0.5, 0.5)
+	dc.DrawStringAnchored(txt, W/2, H/2, 0.5, 0.5)
 	dc.Stroke()
 
-	dc.SavePNG("Color_Wheel.jpg")
+	dc.SavePNG(outputDestination)
 
 	fmt.Println("Image with added text saved.")
 
